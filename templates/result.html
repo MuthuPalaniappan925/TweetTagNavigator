@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TweetTagNavigator</title>
+    <link rel="stylesheet" href="../static/result_css.css">
+    <style>
+      #back-button-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+      #back-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tweet Tags</h1>
+    <div id="details" class="d2">
+      <h2>Twitter User Name: {{user_name}}</h2>
+      <h2>Tweet: {{Tweet_}}</h2>
+    </div>
+    <div id="plot">
+      <img src="{{ url_for('static', filename=graph) }}" alt="Probability plot">
+    </div>
+    <div id="back-button-container">
+      <button id="back-button" onclick="goBack()">Back</button>
+    </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

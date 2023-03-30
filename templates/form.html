@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter-Ml-Muthu-Project</title>
+  <link rel="stylesheet" href="../static/style_2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Muthu-ML-Project</title>
+<link rel="stylesheet" href="/css/master.css">
+<script src="https://use.fontawesome.com/ddde7c70b6.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  </head>
+  <body>
+ <div class="main">
+<div class="nav-bar">
+  <div class="">
+    <span><a href="https://twitter.com/home">Twitter</a></span>
+    <span><a href="https://developer.twitter.com/en">Twitter API</a></span>
+    <span><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></span>
+    <button class="btn"><a href="{{url_for('logout')}}">Logout</a></button>
+  </div>
+</div>
+
+  <div class="search">
+    <div>
+      <img src="../static/twoi.jpg" width="284" alt="Google logo">
+    </div>
+    <div>
+      <form method="POST" action="{{ url_for('pred') }}">
+        <input class="m_1" type="text" placeholder="Twitter Link" name="tw_id" id="tw_id">
+        <div>
+          <input class="m_2" type="text" placeholder="Label 1" name="Label1" id="Label1">
+        </div>
+        <div>
+          <input class="m_2"type="text" placeholder="Label 2" name="Label2" id="Label2">
+        </div>
+          <div>
+          <input class="m_2" type="text" placeholder="Label 3" name="Label3" id="Label3">
+        </div>
+        <div>
+          <button class="btn"href="{{url_for('pred')}}"><span>PyTweet</span></button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+
+  <div class="footer">
+    <div class="left">
+      <span><a href="#">Advertising</a></span>
+      <span><a href="#">Business</a></span>
+      <span><a href="#">About</a></span>
+    </div>
+    <div class="right">
+      <span><a href="#">Privacy</a></span>
+      <span><a href="#">Terms</a></span>
+      <span><a href="#">Settings</a></span>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
